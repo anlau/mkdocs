@@ -75,6 +75,7 @@ setup(
         ],
         'mkdocs.plugins': [
             'search = mkdocs.contrib.search:SearchPlugin',
+            'l10n = mkdocs.contrib.l10n:LocalizationPlugin',
         ],
     },
     classifiers=[
