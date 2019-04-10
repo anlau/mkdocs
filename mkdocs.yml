@@ -44,3 +44,4 @@ google_analytics: ['UA-27795084-5', 'mkdocs.org']
 
 plugins:
     - search
+    - l10n
