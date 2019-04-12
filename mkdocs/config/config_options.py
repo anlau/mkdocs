@@ -458,6 +458,9 @@ class Theme(BaseConfigOption):
             raise ValidationError("The path set in {name}.custom_dir ('{path}') does not exist.".
                                   format(path=theme_config['custom_dir'], name=self.name))
 
+        if 'locale' in theme_config and not isinstance(theme_config['locale'], utils.string_types):
+            raise ValidationError("'theme.locale' must be a string.")
+
         config[key_name] = theme.Theme(**theme_config)
 
 
